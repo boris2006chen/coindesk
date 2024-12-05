@@ -14,10 +14,11 @@ public class CoindeskController {
     private CoindeskService coindeskService;
 
     // 獲取原始 Coindesk 數據
-    @GetMapping("/original")
-    public Map<String, Object> getOriginalData() {
-        return coindeskService..getCoindeskData();
-    }
+  @GetMapping("/original")
+  public String getOriginalData() {
+      return coindeskService.getCoindeskData();
+  }
+
 
     // 獲取轉換後的數據
     @GetMapping("/transformed")
