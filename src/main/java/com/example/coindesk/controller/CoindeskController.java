@@ -16,7 +16,7 @@ public class CoindeskController {
     // 獲取原始 Coindesk 數據
     @GetMapping("/original")
     public Map<String, Object> getOriginalData() {
-        return coindeskService.getTransformedData();
+        return coindeskService..getCoindeskData();
     }
 
     // 獲取轉換後的數據
